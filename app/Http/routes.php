@@ -28,6 +28,8 @@ Route::group(['prefix' => 'posts'], function(){
     Route::get('delete', 'PostsController@delete');
     //Route::get('edit-confirm', 'PostsController@editConfirm');
     Route::get('myposts', 'PostsController@myposts');
+
+    Route::get('delete', 'PostController@delete');
     Route::get('{postID}', 'PostsController@show');
 
 
